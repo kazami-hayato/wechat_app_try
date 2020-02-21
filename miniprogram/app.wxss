@@ -1,0 +1,8 @@
+/**app.wxss**/
+@import './components/weui-wxss/dist/style/weui.wxss';
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}

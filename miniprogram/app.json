@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/Book/book",
+    "pages/Favorite/favorite",
+    "pages/Home/home",
+    "pages/Person/person",
+
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "微厨Plus",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor" : "#fff",
+    "borderStyle" : "white",
+    "list": [
+      {
+        "iconPath": "/assets/icons/home.png",
+        "selectedIconPath": "/assets/icons/home_a.png",
+        "pagePath": "pages/Home/home"
+      },
+      {
+        "iconPath": "/assets/icons/menu.png",
+        "selectedIconPath": "/assets/icons/menu_a.png",
+        "pagePath": "pages/Book/book"
+
+
+      },
+      {
+        "iconPath": "/assets/icons/bookmark.png",
+        "selectedIconPath": "/assets/icons/bookmark_a.png",
+        "pagePath": "pages/Favorite/favorite"
+
+      },
+      {
+        "iconPath": "/assets/icons/person.png",
+        "selectedIconPath": "/assets/icons/person_a.png",
+        "pagePath": "pages/Person/person"
+
+      }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

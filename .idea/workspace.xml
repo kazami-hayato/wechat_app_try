@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ca3d03a4-fa94-4582-9227-3b8f31ca892b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Wechat mini program component js file" />
+        <option value="Wechat mini program page json file(Component API)" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Y51BXBJNi7Xos30RiO1VEtrxvh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/miniprogram/pages/Favorite" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\23303\WeChatProjects\miniprogram-1\miniprogram\pages\Favorite" />
+      <recent name="C:\Users\23303\WeChatProjects\miniprogram-1\miniprogram\assets\icons" />
+      <recent name="C:\Users\23303\WeChatProjects\miniprogram-1\miniprogram\pages\Person" />
+      <recent name="C:\Users\23303\WeChatProjects\miniprogram-1\miniprogram\pages\Book" />
+      <recent name="C:\Users\23303\WeChatProjects\miniprogram-1\miniprogram\components" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="run" type="js.build_tools.npm" nameIsGenerated="true">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca3d03a4-fa94-4582-9227-3b8f31ca892b" name="Default Changelist" comment="" />
+      <created>1582217505853</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582217505853</updated>
+      <workItem from="1582217508837" duration="362000" />
+      <workItem from="1582217886289" duration="120000" />
+      <workItem from="1582218017003" duration="1959000" />
+      <workItem from="1582254702831" duration="1156000" />
+      <workItem from="1582267745672" duration="26435000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="212" y="10" key="#Inspections" timestamp="1582267944858">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="212" y="10" key="#Inspections/0.0.1440.860@0.0.1440.860" timestamp="1582267944858" />
+    <state x="174" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582269491498">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="174" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1582269491498" />
+    <state x="234" y="152" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1582217974486">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="234" y="152" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1440.860@0.0.1440.860" timestamp="1582217974486" />
+    <state x="450" y="132" key="FileChooserDialogImpl" timestamp="1582257292658">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="450" y="132" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1582257292658" />
+    <state x="108" y="0" key="SettingsEditor" timestamp="1582218006098">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="108" y="0" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1582218006098" />
+  </component>
+</project>
