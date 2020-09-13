@@ -3,6 +3,40 @@ const app = getApp()
 
 Page({
     data: {
+        person: {
+            avatar: 'https://www.hbuvt.com/cdn/photos/testkxy.jpeg',
+            info: {
+                real_name: '孔祥宜',
+                exam_id: 'testkxy',
+                major: '计算机',
+                iscollege: '高起本',
+                id_card: '41231323173',
+                main_school: '主考学校',
+                sub_school: '主考分校'
+            },
+            courses: [
+                {
+                    course_name: '测试课程1',
+                    exam_time: '未定',
+                    watch_time: 0,
+                    total_time: 0,
+                    finished_exam: 0,
+                    total_exams: 0,
+                    final_exam: 0,
+                    total_final_exams: 0
+                },
+                {
+                    course_name: '测试课程2',
+                    exam_time: '未定',
+                    watch_time: 0,
+                    total_time: 0,
+                    finished_exam: 0,
+                    total_exams: 0,
+                    final_exam: 0,
+                    total_final_exams: 0
+                }
+            ]
+        },
         recommend:
             [
                 {

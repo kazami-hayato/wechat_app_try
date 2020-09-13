@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "mp-icon": "../../components/icon/icon"
+    "mp-icon": "../../components/icon/icon",
+    "i-card": "../../components/iview/card/index"
   }
 }

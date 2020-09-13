@@ -3,42 +3,91 @@
 
     <view class="vertical-container">
         <scroll-view scroll-y class="vertical-scroll" bindscrolltoupper="upper"
-                bindscrolltolower="lower" bindscroll="scroll"
-                scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-            <view class="heading">
-                <text class="heading-text">时下流行</text>
-            </view>
-            <view class="scroll-container">
-                <scroll-view class="scroll-view" scroll-x bindscroll="scroll" style="width: 100%">
-                    <view wx:for="{{recommend}}" wx:key="*this" class="scroll-view-item">
-                        <image src="{{item.src}}" class="image-item"></image>
-                        <view class="img-title"> <text>{{item.title}}</text></view>
-                    </view>
-                </scroll-view>
-            </view>
-            <view class="special-heading">
-                <text class="special-text">今日特色</text>
-            </view>
-            <view wx:for="{{recommend}}" wx:key="*this" class="vertical-item">
-                <view class="left-board">
-                    <image src="{{item.src}}" class="right-image"></image>
+                     bindscrolltolower="lower" bindscroll="scroll"
+                     scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+            <!--info-card-->
+            <view class="header-card">
+                <view class="header-card-avatar">
+                    <image src="https://www.hbuvt.com/cdn/photos/testkxy.jpeg" class="header-image"></image>
                 </view>
-                <view class="right-board">
-                    <view style="display:flex;padding-top:0.3rem;width:100%;height:auto;">
-                        <text style="min-width:60%;">小龙虾</text>
-                        <view style="float:right;width:auto;">
-                            <mp-icon type="outline" icon="time" color="#828282" size="{{15}}" style="vertical-align:middle;"></mp-icon>
-                            <text class="special-date-text" style="vertical-align:middle;margin-left:0.2rem;">2 天前</text>
+                <view class="header-card-info">
+                    <view class="header-info-block">
+                        <view class="text-item">
+                            <text>姓名：{{person.info.real_name}}</text>
+                        </view>
+                        <view class="text-item">
+                            <text>考号：{{person.info.exam_id}}</text>
+                        </view>
+                        <view class="text-item">
+                            <text>专业名称(层次)：{{person.info.major}}({{person.info.iscollege}})</text>
+                        </view>
+                        <view class="text-item">
+                            <text>身份证号：{{person.info.id_card}}</text>
+                        </view>
+                        <view class="text-item">
+                            <text>主考学校：{{person.info.main_school}}</text>
                         </view>
                     </view>
-                    <view>
-                        <text class="special-desc">
-                        小龙虾要慢慢做
-                        </text>
-                    </view>
-
                 </view>
             </view>
+            <!--my-task-->
+            <view id="task">我的任务</view>
+            <view class="task-container">
+                <view class="du-container">
+                    <view class="du-container-item item-one">
+                        <view class="du-content">
+                            <view class="task-header">
+                                <image src="/images/home/grade.png" class="task-logo"></image>
+                                <text>查成绩</text>
+                            </view>
+                            <view class="task-footer footer-one">
+                                查询本学期当前已得分数
+                            </view>
+                        </view>
+                    </view>
+                    <view class="du-container-item item-two">
+                        <view class="du-content">
+                            <view class="task-header">
+                                <image src="/images/home/video.png" class="task-logo"></image>
+                                <text>看视频</text>
+                            </view>
+                            <view class="task-footer footer-two">
+                                观看视频进行学习
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="exam-container">
+                    <view class="exam-container-item">
+                        <view class="exam-content">
+                            <view class="exam-header">
+                                <image src="/images/home/exam.png" class="task-logo"></image>
+                                <text>在线考试</text>
+                            </view>
+                            <view class="exam-footer">
+                                在线进行阶段测试
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <!--            最近学习-->
+            <view id="record">最近学习</view>
+            <view class="record-container">
+
+            </view>
+            <!--            课程进度-->
+            <view id="course">课程进度</view>
+            <view class="list-view" wx:for="{{person.courses}}" wx:key="*this"  wx:for-index="idx" wx:for-item="course">
+                <view class="course-container">
+                    <view class="course-content">
+                        <view class="course-header">
+                            {{course.course_name}}
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="footer"></view>
         </scroll-view>
     </view>
 </view>

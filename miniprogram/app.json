@@ -1,59 +1,46 @@
 {
   "pages": [
+    "pages/Home/home",
     "pages/Book/book",
     "pages/Favorite/favorite",
-    "pages/Home/home",
-    "pages/Person/person",
-
-    "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib",
-    "pages/openapi/openapi",
-    "pages/openapi/serverapi/serverapi",
-    "pages/openapi/callback/callback",
-    "pages/openapi/cloudid/cloudid",
-    "pages/im/im",
-    "pages/im/room/room"
+    "pages/Person/person"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "微厨Plus",
+    "navigationBarTitleText": "自学岛",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "backgroundColor" : "#fff",
-    "borderStyle" : "white",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
     "list": [
       {
-        "iconPath": "/assets/icons/home.png",
-        "selectedIconPath": "/assets/icons/home_a.png",
-        "pagePath": "pages/Home/home"
+        "iconPath": "/assets/icons/primary/home.png",
+        "selectedIconPath": "/assets/icons/selected/home.png",
+        "pagePath": "pages/Home/home",
+        "text": "主页"
       },
       {
-        "iconPath": "/assets/icons/menu.png",
-        "selectedIconPath": "/assets/icons/menu_a.png",
-        "pagePath": "pages/Book/book"
-
-
+        "iconPath": "/assets/icons/primary/tag.png",
+        "selectedIconPath": "/assets/icons/selected/tag.png",
+        "pagePath": "pages/Book/book",
+        "text": "报考"
       },
       {
-        "iconPath": "/assets/icons/bookmark.png",
-        "selectedIconPath": "/assets/icons/bookmark_a.png",
-        "pagePath": "pages/Favorite/favorite"
-
+        "iconPath": "/assets/icons/primary/email.png",
+        "selectedIconPath": "/assets/icons/selected/email.png",
+        "pagePath": "pages/Favorite/favorite",
+        "text": "信息"
       },
       {
-        "iconPath": "/assets/icons/person.png",
-        "selectedIconPath": "/assets/icons/person_a.png",
-        "pagePath": "pages/Person/person"
-
-      }]
+        "iconPath": "/assets/icons/primary/person.png",
+        "selectedIconPath": "/assets/icons/selected/person.png",
+        "pagePath": "pages/Person/person",
+        "text": "我的"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"

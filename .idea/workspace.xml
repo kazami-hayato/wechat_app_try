@@ -1,10 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ca3d03a4-fa94-4582-9227-3b8f31ca892b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miniprogram/assets/icons/primary/email.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miniprogram/assets/icons/primary/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miniprogram/assets/icons/primary/person.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miniprogram/assets/icons/primary/tag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miniprogram/assets/icons/selected/email.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miniprogram/assets/icons/selected/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miniprogram/assets/icons/selected/person.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miniprogram/assets/icons/selected/tag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miniprogram/images/home/exam.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miniprogram/images/home/grade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miniprogram/images/home/video.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/assets/icons/book.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/assets/icons/book_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/assets/icons/bookmark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/assets/icons/bookmark_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/assets/icons/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/assets/icons/home_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/assets/icons/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/assets/icons/menu_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/assets/icons/person.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/assets/icons/person_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/Book/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/Book/book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/Book/book.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/Book/book.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/Home/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/Home/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/Home/home.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/Home/home.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/Home/home.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/Home/home.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/Home/home.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/Home/home.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/addFunction/addFunction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/addFunction/addFunction.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/addFunction/addFunction.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/addFunction/addFunction.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/chooseLib/chooseLib.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/chooseLib/chooseLib.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/chooseLib/chooseLib.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/chooseLib/chooseLib.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/databaseGuide/databaseGuide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/databaseGuide/databaseGuide.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/databaseGuide/databaseGuide.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/databaseGuide/databaseGuide.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/deployFunctions/deployFunctions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/deployFunctions/deployFunctions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/deployFunctions/deployFunctions.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/deployFunctions/deployFunctions.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/im/im.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/im/im.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/im/im.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/im/im.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/im/room/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/im/room/room.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/im/room/room.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/im/room/room.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/im/room/room.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/index/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/index/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/index/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/index/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/index/user-unlogin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/openapi/callback/callback.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/openapi/callback/callback.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/openapi/callback/callback.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/openapi/callback/callback.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/openapi/cloudid/cloudid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/openapi/cloudid/cloudid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/openapi/cloudid/cloudid.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/openapi/cloudid/cloudid.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/openapi/openapi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/openapi/openapi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/openapi/openapi.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/openapi/openapi.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/openapi/serverapi/serverapi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/openapi/serverapi/serverapi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/openapi/serverapi/serverapi.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/openapi/serverapi/serverapi.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/storageConsole/storageConsole.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/storageConsole/storageConsole.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/storageConsole/storageConsole.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/storageConsole/storageConsole.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/userConsole/userConsole.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/userConsole/userConsole.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/userConsole/userConsole.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/pages/userConsole/userConsole.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +118,8 @@
       <list>
         <option value="Wechat mini program component js file" />
         <option value="Wechat mini program page json file(Component API)" />
+        <option value="Wechat mini program page js file(Page API)" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -26,35 +130,37 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/miniprogram/pages/Favorite" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/miniprogram/images/home" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\project\student_wechat" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\23303\WeChatProjects\miniprogram-1\miniprogram\pages\Favorite" />
-      <recent name="C:\Users\23303\WeChatProjects\miniprogram-1\miniprogram\assets\icons" />
-      <recent name="C:\Users\23303\WeChatProjects\miniprogram-1\miniprogram\pages\Person" />
-      <recent name="C:\Users\23303\WeChatProjects\miniprogram-1\miniprogram\pages\Book" />
-      <recent name="C:\Users\23303\WeChatProjects\miniprogram-1\miniprogram\components" />
+      <recent name="C:\Users\Administrator\Desktop\project\student_wechat\miniprogram\images\home" />
+      <recent name="C:\Users\Administrator\Desktop\project\student_wechat\miniprogram\pages\Home\components\task-card" />
+      <recent name="C:\Users\Administrator\Desktop\project\student_wechat\miniprogram\components\iview" />
+      <recent name="C:\Users\Administrator\Desktop\project\student_wechat\miniprogram\pages\trash" />
+      <recent name="C:\Users\Administrator\Desktop\project\student_wechat\miniprogram\assets\icons\primary" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="run" type="js.build_tools.npm" nameIsGenerated="true">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -70,32 +176,44 @@
       <workItem from="1582218017003" duration="1959000" />
       <workItem from="1582254702831" duration="1156000" />
       <workItem from="1582267745672" duration="27349000" />
+      <workItem from="1599807152186" duration="185000" />
+      <workItem from="1599807350261" duration="1915000" />
+      <workItem from="1599896348623" duration="227000" />
+      <workItem from="1599896586983" duration="3000" />
+      <workItem from="1599974825880" duration="1940000" />
+      <workItem from="1599977900324" duration="1956000" />
+      <workItem from="1599980647572" duration="3404000" />
+      <workItem from="1599984744744" duration="8295000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="212" y="10" key="#Inspections" timestamp="1582267944858">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="730" y="346" width="1099" height="765" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599975027269">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="212" y="10" key="#Inspections/0.0.1440.860@0.0.1440.860" timestamp="1582267944858" />
-    <state x="174" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582269491498">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="730" y="346" width="1099" height="765" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1599975027269" />
+    <state x="664" y="258" key="SettingsEditor" timestamp="1599980428570">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="174" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1582269491498" />
-    <state x="234" y="152" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1582217974486">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="664" y="258" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1599980428570" />
+    <state x="999" y="509" key="cloudConfig.PluginsDialog" timestamp="1599977561433">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="234" y="152" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1440.860@0.0.1440.860" timestamp="1582217974486" />
-    <state x="450" y="132" key="FileChooserDialogImpl" timestamp="1582257292658">
-      <screen x="0" y="0" width="1440" height="860" />
-    </state>
-    <state x="450" y="132" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1582257292658" />
-    <state x="108" y="0" key="SettingsEditor" timestamp="1582218006098">
-      <screen x="0" y="0" width="1440" height="860" />
-    </state>
-    <state x="108" y="0" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1582218006098" />
+    <state x="999" y="509" key="cloudConfig.PluginsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1599977561433" />
   </component>
 </project>
