@@ -1,52 +1,29 @@
-//home.js
+// favorite.js
 const app = getApp()
 
 Page({
     data: {
-        person: {
-            avatar: 'https://www.hbuvt.com/cdn/photos/testkxy.jpeg',
-            info: {
-                real_name: '孔祥宜',
-                exam_id: 'testkxy',
-                major: '计算机',
-                iscollege: '高起本',
-                id_card: '41231323173',
-                main_school: '主考学校',
-                sub_school: '主考分校'
-            },
-            courses: [
-                {
-                    course_name: '测试课程1',
-                    exam_time: '未定',
-                    watch_time: 0,
-                    total_time: 0,
-                    watch_sum:1,
-                    total_sum:1,
-                    finished_exam: 0,
-                    total_exams: 0,
-                    final_exam: 0,
-                    total_final_exams: 0
-                },
-                {
-                    course_name: '测试课程2',
-                    exam_time: '未定',
-                    watch_time: 0,
-                    total_time: 0,
-                    watch_sum:1,
-                    total_sum:1,
-                    finished_exam: 0,
-                    total_exams: 0,
-                    final_exam: 0,
-                    total_final_exams: 0
-                }
-            ]
-        },
+        array: ['全部', '新闻', '通知', '法律法规'],
+        index: 0,
         recommend:
             [
                 {
                     title: '沙拉',
                     src: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2868086659,687271532&fm=26&gp=0.jpg'
                 },
+                {
+                    title: '沙拉',
+                    src: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2868086659,687271532&fm=26&gp=0.jpg'
+                }, {
+                title: '沙拉',
+                src: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2868086659,687271532&fm=26&gp=0.jpg'
+            }, {
+                title: '沙拉',
+                src: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2868086659,687271532&fm=26&gp=0.jpg'
+            }, {
+                title: '沙拉',
+                src: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2868086659,687271532&fm=26&gp=0.jpg'
+            },
                 {
                     title: '烧烤',
                     src: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2910643299,2019005270&fm=26&gp=0.jpg'
@@ -72,6 +49,12 @@ Page({
         previousMargin: 0,
         displayNum: 2,
         nextMargin: 0
+    },
+    bindPickerChange: function (e) {
+        console.log('picker发送选择改变，携带值为', e.detail.value)
+        this.setData({
+            index: e.detail.value
+        })
     },
     upper(e) {
         console.log(e)

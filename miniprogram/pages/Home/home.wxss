@@ -244,7 +244,8 @@ page {
     width: 90%;
     font-weight: 400;
 }
-.course-header{
+
+.course-header {
     line-height: 2rem;
     display: flex;
     font-size: 1rem;
@@ -252,8 +253,64 @@ page {
     /*justify-content: center;*/
     color: black;
     font-weight: 700;
-    font-family: tahoma,arial,Hiragino Sans GB,微软雅黑,simsun,sans-serif;
+    font-family: tahoma, arial, Hiragino Sans GB, 微软雅黑, simsun, sans-serif;
 }
+
+.course-middle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-footer {
+    margin-top: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-detail {
+    border-radius: 1rem;
+    width: 28%;
+    padding: 0 .3rem;
+    /*height: 1rem;*/
+    /*margin:  auto;*/
+    font-size: 0.6rem;
+    /*background: #894dff;*/
+}
+
+.exam-time {
+    color: #919699;
+    text-align: left;
+    font-size: 0.6rem;
+    line-height: 1rem;
+}
+
+.exam-btn {
+    background: #3af;
+    float: right;
+    border-radius: 1rem;
+    width: 4rem;
+    height: 1.4rem;
+    line-height: 1.5rem;
+
+}
+
+.detail-one {
+    color: #f39330;
+    border: .1rem solid #f39330;
+}
+
+.detail-two {
+    color: #ff5433;
+    border: .1rem solid #ff5433;
+}
+
+.detail-three {
+    background: #f39330;
+    color: #fff;
+    border: .026667rem solid #f39330;
+}
+
+
 .footer {
     height: 1rem;
 }

@@ -78,11 +78,30 @@
             </view>
             <!--            课程进度-->
             <view id="course">课程进度</view>
-            <view class="list-view" wx:for="{{person.courses}}" wx:key="*this"  wx:for-index="idx" wx:for-item="course">
+            <view class="list-view" wx:for="{{person.courses}}" wx:key="*this" wx:for-index="idx" wx:for-item="course">
                 <view class="course-container">
                     <view class="course-content">
                         <view class="course-header">
                             {{course.course_name}}
+                        </view>
+                        <view class="course-middle">
+                            <view class="exam-time">
+                                考试时间：{{course.exam_time}}
+                            </view>
+                            <view class="exam-btn">
+                                <text>去学习</text>
+                            </view>
+                        </view>
+                        <view class="course-footer">
+                            <view class="course-detail detail-one">
+                                <text>视频：{{course.watch_sum}}/{{course.total_sum}}</text>
+                            </view>
+                            <view class="course-detail detail-two">
+                                <text>测验：{{course.watch_sum}}/{{course.total_sum}}</text>
+                            </view>
+                            <view class="course-detail detail-three">
+                                <text>综合测评：{{course.watch_sum}}/{{course.total_sum}}</text>
+                            </view>
                         </view>
                     </view>
                 </view>

@@ -1,0 +1,24 @@
+@import "../../components/weui-wxss/dist/style/weui.wxss";
+
+
+.vertical-container{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+}
+.vertical-scroll{
+    width: 90%;
+}
+.head-container{
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+}
+.picker{
+}
+.right-icon{
+    margin-right: 0.3rem;
+    width: 1rem;
+    height: 0.7rem;
+}
