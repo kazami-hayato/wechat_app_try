@@ -98,12 +98,15 @@ page {
     height: 1.5rem;
 }
 .middle-text{
+    /*margin-bottom: 1rem;*/
     margin-left: 0.7rem;
     min-width: 100%;
     width: 90%;
-    line-height: 1rem;
+    /*line-height: 1rem;*/
     font-size: 1.4rem;
     color: #000;
+    position: relative;
+    bottom: 0.2rem;
 }
 .right-icon {
     width: 1.5rem;

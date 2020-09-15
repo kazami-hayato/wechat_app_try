@@ -5,41 +5,29 @@ Page({
     data: {
         array: ['全部', '新闻', '通知', '法律法规'],
         index: 0,
-        recommend:
-            [
-                {
-                    title: '沙拉',
-                    src: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2868086659,687271532&fm=26&gp=0.jpg'
-                },
-                {
-                    title: '沙拉',
-                    src: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2868086659,687271532&fm=26&gp=0.jpg'
-                }, {
-                title: '沙拉',
-                src: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2868086659,687271532&fm=26&gp=0.jpg'
-            }, {
-                title: '沙拉',
-                src: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2868086659,687271532&fm=26&gp=0.jpg'
-            }, {
-                title: '沙拉',
-                src: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2868086659,687271532&fm=26&gp=0.jpg'
+        notices: [
+            {
+                title: '这是一则通知',
+                type: '新闻',
+                author: 'zerk',
+                content: 'weq',
+                datetime: '2020-07-01 14:22:11'
             },
-                {
-                    title: '烧烤',
-                    src: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2910643299,2019005270&fm=26&gp=0.jpg'
-                },
-                {
-                    title: '烤鱼',
-                    src: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3476624165,2756264362&fm=26&gp=0.jpg'
-                },
-                {
-                    title: '小炒黄牛肉',
-                    src: 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1435288785,2283988937&fm=15&gp=0.jpg'
-                },
-                {
-                    title: '羊蝎子火锅',
-                    src: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582290238653&di=366731853b335f4e7ffd8842a6512698&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181220%2F3655cef2d7b74c39b4f821548ed98d52.jpeg'
-                }],
+            {
+                title: '这是一则通知',
+                type: '新闻',
+                author: 'zerk',
+                content: 'weq',
+                datetime: '2020-07-01 14:22:11'
+            },
+            {
+                title: '这是一则通知',
+                type: '新闻',
+                author: 'zerk',
+                content: 'weq',
+                datetime: '2020-07-01 14:22:11'
+            }
+        ],
         indicatorDots: false,
         vertical: false,
         autoplay: false,

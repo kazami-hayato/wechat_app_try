@@ -1,9 +1,11 @@
 {
   "pages": [
+    "pages/Index/index",
+    "pages/Home/home",
+    "pages/Selection/selection",
     "pages/Information/information",
     "pages/Person/person",
-    "pages/Home/home",
-    "pages/Book/book"
+    "pages/Video/video"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -14,6 +16,7 @@
   },
   "tabBar": {
     "backgroundColor": "#fff",
+    "selectedColor": "#33AAFF",
     "borderStyle": "white",
     "list": [
       {
@@ -25,7 +28,7 @@
       {
         "iconPath": "/assets/icons/primary/tag.png",
         "selectedIconPath": "/assets/icons/selected/tag.png",
-        "pagePath": "pages/Book/book",
+        "pagePath": "pages/Selection/selection",
         "text": "报考"
       },
       {
@@ -43,5 +46,8 @@
     ]
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+  "usingComponents": {
+    "i-toast": "../../components/iview/toast/index"
+  }
 }

@@ -1,0 +1,31 @@
+<!--miniprogram/pages/Index/index.wxml-->
+<view wx:if="{{isHide}}" class="auth-container">
+    <view wx:if="{{canIUse}}" class="header-container">
+        <view class='header'>
+            <image src='/images/zxd.png'></image>
+        </view>
+
+        <view class='content'>
+            <view>申请获取以下权限</view>
+            <text>获得你的公开信息(昵称，头像等)</text>
+        </view>
+
+        <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+            授权登录
+        </button>
+    </view>
+    <view wx:else>请升级微信版本</view>
+</view>
+
+<view wx:else>
+    <view class="redirect-container">
+        <view class="redirect-content">
+            <view>授权成功正在跳转 </view>
+            <i-spin style="margin-left: 0.2rem"></i-spin>
+            <i-spin style="margin-left: 0.2rem"></i-spin>
+            <i-spin style="margin-left: 0.2rem"></i-spin>
+
+        </view>
+    </view>
+
+</view>

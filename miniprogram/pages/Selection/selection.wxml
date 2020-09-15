@@ -1,0 +1,9 @@
+<!--favorite.wxml-->
+<view class="container">
+    <view class="temp-container">
+        <image src="/images/selection/working.png"></image>
+        <view class="temp-text">
+            <text>工程师努力开发中...</text>
+        </view>
+    </view>
+</view>

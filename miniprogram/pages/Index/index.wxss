@@ -1,0 +1,50 @@
+/* miniprogram/pages/Index/index.wxss */
+.auth-container{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.header-container{
+    width: 90%;
+    display: block;
+}
+.header {
+    margin-top: 2rem;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 6rem;
+}
+
+.header image {
+    width: 6rem;
+    height: 5.5rem;
+}
+
+.content {
+    margin-left: 1rem;
+    margin-top: 0.4rem;
+}
+
+.content text {
+    display: block;
+    color: #9d9d9d;
+    margin-top: 1rem;
+}
+
+.bottom {
+    border-radius: 3rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/*redirect*/
+.redirect-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.redirect-content{
+    margin-top: 2rem;
+    line-height: 1.2rem;
+    display: flex;
+}

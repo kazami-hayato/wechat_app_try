@@ -1,0 +1,14 @@
+{
+  "name": "zixuedao",
+  "version": "1.0.0",
+  "description": "online app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zerkvii@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "wx-promise-request": "^2.1.3"
+  }
+}

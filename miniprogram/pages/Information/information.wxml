@@ -2,39 +2,28 @@
 <view class="container">
     <view class="vertical-container">
         <scroll-view scroll-y class="vertical-scroll" bindscrolltoupper="upper"
-                bindscrolltolower="lower" bindscroll="scroll"
-                scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+                     bindscrolltolower="lower" bindscroll="scroll"
+                     scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
             <view class="head-container">
-                    <text class="heading-text" style="min-width:75%;">消息类型</text>
-                    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" style="min-width:30%;display:flex;">
-                        <view class="picker" >
+                <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                    <view class="picker-container">
+                        <view class="picker">
                             <text style="vertical-align:center"> {{array[index]}}</text>
                             <image src="/images/information/dropdown.png" class="right-icon"></image>
-
-                            <!--                            <icon type="download" size="{{15}}" color="#161C2B"/>-->
                         </view>
-
-                    </picker>
+                    </view>
+                </picker>
             </view>
             <view class="info-container">
-                <view wx:for="{{recommend}}" wx:key="*this" class="vertical-item">
-                    <view class="left-board">
-                        <image src="{{item.src}}" class="right-image"></image>
-                    </view>
-                    <view class="right-board">
-                        <view style="display:flex;padding-top:0.3rem;width:100%;height:auto;">
-                            <text style="min-width:60%;">小龙虾</text>
-                            <view style="float:right;width:auto;">
-                                <mp-icon type="outline" icon="time" color="#828282" size="{{15}}" style="vertical-align:middle;"></mp-icon>
-                                <text class="special-date-text" style="vertical-align:middle;margin-left:0.2rem;">2 天前</text>
-                            </view>
+                <view class="list-view">
+                    <view wx:for="{{notices}}" wx:key="*this" wx:for-index="idx" wx:for-item="notice">
+                        <view class="notice-container">
+<!--                            <text>{{notice.title }}</text>-->
+                            <i-card title="{{notice.title}}"  i-class="notice-card" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+                                <view slot="content">{{notice.author}}</view>
+                                <view slot="footer">{{notice.datetime}}</view>
+                            </i-card>
                         </view>
-                        <view>
-                            <text class="special-desc">
-
-                            </text>
-                        </view>
-
                     </view>
                 </view>
             </view>

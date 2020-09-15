@@ -1,4 +1,6 @@
 //home.js
+import {getCourses, getCourses} from "../../apis/auth";
+
 const app = getApp()
 
 Page({
@@ -14,55 +16,8 @@ Page({
                 main_school: '主考学校',
                 sub_school: '主考分校'
             },
-            courses: [
-                {
-                    course_name: '测试课程1',
-                    exam_time: '未定',
-                    watch_time: 0,
-                    total_time: 0,
-                    watch_sum:1,
-                    total_sum:1,
-                    finished_exam: 0,
-                    total_exams: 0,
-                    final_exam: 0,
-                    total_final_exams: 0
-                },
-                {
-                    course_name: '测试课程2',
-                    exam_time: '未定',
-                    watch_time: 0,
-                    total_time: 0,
-                    watch_sum:1,
-                    total_sum:1,
-                    finished_exam: 0,
-                    total_exams: 0,
-                    final_exam: 0,
-                    total_final_exams: 0
-                }
-            ]
+            courses: []
         },
-        recommend:
-            [
-                {
-                    title: '沙拉',
-                    src: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2868086659,687271532&fm=26&gp=0.jpg'
-                },
-                {
-                    title: '烧烤',
-                    src: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2910643299,2019005270&fm=26&gp=0.jpg'
-                },
-                {
-                    title: '烤鱼',
-                    src: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3476624165,2756264362&fm=26&gp=0.jpg'
-                },
-                {
-                    title: '小炒黄牛肉',
-                    src: 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1435288785,2283988937&fm=15&gp=0.jpg'
-                },
-                {
-                    title: '羊蝎子火锅',
-                    src: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582290238653&di=366731853b335f4e7ffd8842a6512698&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181220%2F3655cef2d7b74c39b4f821548ed98d52.jpeg'
-                }],
         indicatorDots: false,
         vertical: false,
         autoplay: false,
@@ -91,20 +46,11 @@ Page({
         })
     },
     tap() {
-        for (let i = 0; i < order.length; ++i) {
-            if (order[i] === this.data.toView) {
-                this.setData({
-                    toView: order[i + 1],
-                    scrollTop: (i + 1) * 200
-                })
-                break
-            }
-        }
     },
 
     changeProperty: function (e) {
-        var propertyName = e.currentTarget.dataset.propertyName
-        var newData = {}
+        const propertyName = e.currentTarget.dataset.propertyName;
+        const newData = {};
         newData[propertyName] = e.detail.value
         this.setData(newData)
     },
@@ -127,6 +73,28 @@ Page({
         this.setData({
             duration: e.detail.value
         })
-    }
+    },
+    onShow(e) {
+        const that = this;
+        getCourses().then(res => {
+            let courses=res.data
+            console.log(courses)
+            courses.forEach(course => {
+                let num = 0
+                if (course.test1 > 0) num += 1
+                if (course.test2 > 0) num += 1
+                if (course.test3 > 0) num += 1
+                if (course.test4 > 0) num += 1
+                course['exam_sum'] = num
+                course['main_finished'] = 0
+                if (course.main_test > 0) course['main_finished'] = 1
+            })
+            // console.log(courses)
+            that.setData({
+                'person.courses': courses
+            })
+        });
+
+    },
 
 })
