@@ -1,5 +1,10 @@
 //app.js
+
 App({
+    globalData: {
+        exam_id: 'testkxy',
+        url: 'http://localhost:8080/apis/v1/wechat',
+    },
     onLaunch: function () {
 
         if (!wx.cloud) {
@@ -15,7 +20,6 @@ App({
             })
         }
 
-        this.globalData = {}
         wx.login({
             success(res) {
                 if (res.code) {
@@ -30,5 +34,7 @@ App({
                 console.log(res)
             }
         })
-    }
+
+    },
+
 })

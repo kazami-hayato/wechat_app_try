@@ -4,40 +4,56 @@
         </view>
         <view class="top-avatar-container">
             <view class="avatar-container">
-                <image src="https://www.hbuvt.com/cdn/photos/testkxy.jpeg" class="top-avatar"></image>
+                <image src="{{person.info.avatar}}" class="top-avatar"></image>
             </view>
         </view>
     </view>
     <view class="middle-container">
         <view class="middle-content">
-        <view class="item-container">
-            <view class="middle-item">
-                <image src="/images/person/pen.png" class="item-logo"></image>
-                <text class="middle-text">个人信息</text>
-                <image src="/images/person/right.png" class="right-icon"></image>
+            <view class="item-container" bindtap="goChangeInfo">
+                <view class="middle-item">
+                    <image src="/images/person/pen.png" class="item-logo"></image>
+                    <text class="middle-text">个人信息</text>
+                    <image src="/images/person/right.png" class="right-icon"></image>
+                </view>
             </view>
+            <view class="item-container" bindtap="goChangePwd">
+                <view class="middle-item">
+                    <image src="/images/person/setting.png" class="item-logo"></image>
+                    <text class="middle-text">修改密码</text>
+                    <image src="/images/person/right.png" class="right-icon"></image>
+                </view>
+            </view>
+            <view class="item-container" bindtap="goAbout">
+                <view class="middle-item">
+                    <image src="/images/person/question.png" class="item-logo"></image>
+                    <text class="middle-text">关于我们</text>
+                    <image src="/images/person/right.png" class="right-icon"></image>
+                </view>
+            </view>
+            <navigator hover-class="none" target="miniProgram" open-type="exit">
+                <view class="item-container">
+
+                    <view class="middle-item">
+                        <image src="/images/person/exit.png" class="item-logo"></image>
+                        <text class="middle-text">注销登录</text>
+                        <image src="/images/person/right.png" class="right-icon"></image>
+                    </view>
+                </view>
+
+            </navigator>
         </view>
-        <view class="item-container">
-            <view class="middle-item">
-                <image src="/images/person/setting.png" class="item-logo"></image>
-                <text class="middle-text">修改密码</text>
-                <image src="/images/person/right.png" class="right-icon"></image>
-            </view>
-        </view>
-        <view class="item-container">
-            <view class="middle-item">
-                <image src="/images/person/question.png" class="item-logo"></image>
-                <text class="middle-text">关于我们</text>
-                <image src="/images/person/right.png" class="right-icon"></image>
-            </view>
-        </view>
-        <view class="item-container">
-            <view class="middle-item">
-                <image src="/images/person/exit.png" class="item-logo"></image>
-                <text class="middle-text">注销登录</text>
-                <image src="/images/person/right.png" class="right-icon"></image>
-            </view>
+
+    </view>
+    <view class="online-consult">
+        <view class="consult-content">
+            <i-button bind:click="handleClick" type="ghost" size="large">
+                <view class="btn-view">
+                    <image src="/images/other/consult.png" class="consult-image"></image>
+                    <text>在线咨询</text>
+                </view>
+            </i-button>
         </view>
     </view>
-    </view>
+
 </view>

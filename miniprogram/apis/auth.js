@@ -1,12 +1,13 @@
 import {request, setConfig} from './wx-promise-request';
 
+const app = getApp();
+console.log(app)
 const {$Toast} = require('../components/iview/base/index');
-
-const url = "https://www.hbuvt.com/apis/v1/frontend"
-
-export const getCourses = (exam_id) => {
+const url = app.globalData.url
+const exam_id = app.globalData.exam_id
+export const getCourses = () => {
     return request({
-        url: url + "/course/all/testkxy",
+        url: url + "/course/all/" + exam_id,
         header: {
             'content-type': 'application/json',
         },
@@ -21,3 +22,22 @@ export const getCourses = (exam_id) => {
             });
         })
 }
+
+export const getStudentInfo = () => {
+    return request({
+        url: url + "/person_info/" + exam_id,
+        header: {
+            'content-type': 'application/json',
+        },
+    })
+        .then(res => res.data
+        )
+        .catch(error => {
+            $Toast({
+                content: '请求课程数据出错请联系客服',
+                type: 'error',
+                duration: 2
+            });
+        })
+}
+

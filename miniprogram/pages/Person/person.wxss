@@ -114,4 +114,18 @@ page {
     float: right;
     margin-right: -2rem;
 }
+.online-consult{
+    margin-top: 2rem;
+    width: 100%;
 
+}
+.btn-view{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    line-height: 2rem;
+}
+.consult-image{
+    width: 2rem;
+    height: 2rem;
+}

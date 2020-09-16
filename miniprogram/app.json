@@ -1,11 +1,15 @@
 {
   "pages": [
-    "pages/Index/index",
+    "pages/Person/person",
     "pages/Home/home",
+    "pages/ChangeInfo/change",
+    "pages/Index/index",
     "pages/Selection/selection",
     "pages/Information/information",
-    "pages/Person/person",
-    "pages/Video/video"
+    "pages/Video/video",
+    "pages/Consult/consult",
+    "pages/About/about",
+    "pages/ChangePwd/password"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -48,6 +52,6 @@
   "sitemapLocation": "sitemap.json",
   "style": "v2",
   "usingComponents": {
-    "i-toast": "../../components/iview/toast/index"
+    "i-toast": "/components/iview/toast/index"
   }
 }

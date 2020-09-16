@@ -1,20 +1,19 @@
 //home.js
-import {getCourses, getCourses} from "../../apis/auth";
+import {getCourses, getStudentInfo} from "../../apis/auth";
 
 const app = getApp()
 
 Page({
     data: {
         person: {
-            avatar: 'https://www.hbuvt.com/cdn/photos/testkxy.jpeg',
             info: {
-                real_name: '孔祥宜',
-                exam_id: 'testkxy',
-                major: '计算机',
-                iscollege: '高起本',
-                id_card: '41231323173',
-                main_school: '主考学校',
-                sub_school: '主考分校'
+                // real_name: '孔祥宜',
+                // exam_id: 'testkxy',
+                // major: '计算机',
+                // iscollege: '高起本',
+                // id_card: '41231323173',
+                // main_school: '主考学校',
+                // sub_school: '主考分校'
             },
             courses: []
         },
@@ -76,8 +75,13 @@ Page({
     },
     onShow(e) {
         const that = this;
+        getStudentInfo().then(res => {
+            that.setData({
+                'person.info': res.data
+            })
+        })
         getCourses().then(res => {
-            let courses=res.data
+            let courses = res.data
             console.log(courses)
             courses.forEach(course => {
                 let num = 0

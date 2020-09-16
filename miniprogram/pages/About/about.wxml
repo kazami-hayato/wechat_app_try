@@ -1,0 +1,5 @@
+<!--miniprogram/pages/About/about.wxml-->
+<viwe class="board">
+    <image src="/images/other/contact.jpg" class="contact-pic"></image>
+
+</viwe>

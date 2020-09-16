@@ -8,7 +8,7 @@
             <!--info-card-->
             <view class="header-card">
                 <view class="header-card-avatar">
-                    <image src="https://www.hbuvt.com/cdn/photos/testkxy.jpeg" class="header-image"></image>
+                    <image src="{{person.info.avatar}}" class="header-image"></image>
                 </view>
                 <view class="header-card-info">
                     <view class="header-info-block">
