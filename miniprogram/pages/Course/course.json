@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "i-divider": "../../components/iview/divider/index",
+    "z-course": "../Home/Component/CourseBoard/courseBoard"
+
+  }
+}

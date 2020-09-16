@@ -1,0 +1,29 @@
+/* miniprogram/pages/Grade/grade.wxss */
+
+.grade-container{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+}
+.grade-content{
+    width: 90%;
+    margin-top: 1rem;
+}
+.th{
+  width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.th-content{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.th-split{
+    border-right: 1px solid rgb(204, 204, 204);
+}
+.grade-table{
+    margin-top: 1rem;
+    width: 100%;
+}

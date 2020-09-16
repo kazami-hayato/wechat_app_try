@@ -1,0 +1,72 @@
+<!--miniprogram/pages/Course/course.wxml-->
+
+<view class="page-container">
+    <view class="header">
+        <view class="head-container">
+            <view class="item-container">
+                <view class="item-top">
+                    <image src="/images/course/play.png" class="top-ico"></image>
+                    <view class="top-text">视频总数</view>
+                </view>
+                <view class="item-bottom">
+                    <view class="bottom-text">22</view>
+                </view>
+            </view>
+            <view class="item-container">
+                <view class="item-top">
+                    <image src="/images/course/test.png" class="top-ico"></image>
+                    <view class="top-text">测验总数</view>
+                </view>
+                <view class="item-bottom">
+                    <view class="bottom-text">4</view>
+                </view>
+            </view>
+            <view class="item-container">
+                <view class="item-top">
+                    <image src="/images/course/all.png" class="top-ico"></image>
+                    <view class="top-text">综合测验</view>
+                </view>
+                <view class="item-bottom">
+                    <view class="bottom-text">1</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view style="width: 100%;height:14rem; flex;justify-content: center">
+        <view wx:for="{{person.courses}}" wx:key="*this" wx:for-index="idx" wx:for-item="course" >
+            <z-course course_name="{{course.course_name}}" exma_time="{{course.exam_time}}"
+                      watch_sum="{{course.watch_sum}}}" total_sum="{{course.total_sum}}"
+                      exam_sum="{{course.exam_sum}}" main_finished="{{course.main_finished}}"
+            >
+            </z-course>
+        </view>
+    </view>
+<!--    <view class="list-view" wx:for="{{person.courses}}" wx:key="*this" wx:for-index="idx" wx:for-item="course">-->
+<!--        <view class="list-container" bindtap="goVideo">-->
+<!--            <view class="course-content">-->
+<!--                <view class="course-header">-->
+<!--                    {{course.course_name}}-->
+<!--                </view>-->
+<!--                <view class="course-middle">-->
+<!--                    <view class="exam-time">-->
+<!--                        考试时间：{{course.exam_time}}-->
+<!--                    </view>-->
+<!--                    <view class="exam-btn">-->
+<!--                        <text>去学习</text>-->
+<!--                    </view>-->
+<!--                </view>-->
+<!--                <view class="course-footer">-->
+<!--                    <view class="course-detail detail-one">-->
+<!--                        <text>视频：{{course.watch_sum}}/{{course.total_sum}}</text>-->
+<!--                    </view>-->
+<!--                    <view class="course-detail detail-two">-->
+<!--                        <text>测验：{{course.exam_sum}}/4</text>-->
+<!--                    </view>-->
+<!--                    <view class="course-detail detail-three">-->
+<!--                        <text>综合测评：{{course.main_finished}}/1</text>-->
+<!--                    </view>-->
+<!--                </view>-->
+<!--            </view>-->
+<!--        </view>-->
+<!--    </view>-->
+</view>

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "i-progress": "../../../../components/iview/progress/index"
+  }
+}

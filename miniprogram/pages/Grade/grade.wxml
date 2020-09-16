@@ -1,0 +1,29 @@
+<!--miniprogram/pages/Grade/grade.wxml-->
+
+<view class="grade-container">
+    <view class="grade-content">
+        <view class="grade-header">
+
+        </view>
+        <view class="grade-table">
+            <view class="th">
+                <view class="th-content">
+                    <view>课程名称</view>
+                    <view class="th-split"></view>
+                    <view>最后得分</view>
+                </view>
+            </view>
+            <z-collapse-item name="grade-rows" wx:for="{{rows}}" wx:for-index="idx" wx:for-item="course">
+                <view slot="header" style="width:92%; justify-content: space-between;display: flex">
+                    <view class="course-name">{{course.course_name}}</view>
+                    <view class="total-score">{{course.total_score}}</view>
+                </view>
+                <view slot="content">
+                   <view class="tr-content">
+                   </view>
+                </view>
+            </z-collapse-item>
+        </view>
+    </view>
+</view>
+

@@ -1,5 +1,8 @@
 {
   "usingComponents": {
-    "i-card": "../../components/iview/card/index"
+    "i-card": "../../components/iview/card/index",
+    "i-progress": "../../components/iview/progress/index",
+    "z-course": "./Component/CourseBoard/courseBoard"
+
   }
 }

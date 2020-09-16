@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "z-collapse-item": "../../components/iview/z-collapse-item/index"
+  }
+}

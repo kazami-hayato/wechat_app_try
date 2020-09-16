@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/Person/person",
     "pages/Home/home",
+    "pages/Course/course",
+    "pages/Grade/grade",
+    "pages/Person/person",
     "pages/ChangeInfo/change",
     "pages/Index/index",
     "pages/Selection/selection",

@@ -34,7 +34,7 @@
             <view id="task">我的任务</view>
             <view class="task-container">
                 <view class="du-container">
-                    <view class="du-container-item item-one">
+                    <view class="du-container-item item-one" bindtap="goGrade">
                         <view class="du-content">
                             <view class="task-header">
                                 <image src="/images/home/grade.png" class="task-logo"></image>
@@ -45,7 +45,7 @@
                             </view>
                         </view>
                     </view>
-                    <view class="du-container-item item-two">
+                    <view class="du-container-item item-two" bindtap="goCourse">
                         <view class="du-content">
                             <view class="task-header">
                                 <image src="/images/home/video.png" class="task-logo"></image>
@@ -57,7 +57,7 @@
                         </view>
                     </view>
                 </view>
-                <view class="exam-container">
+                <view class="exam-container" bindtap="goExam">
                     <view class="exam-container-item">
                         <view class="exam-content">
                             <view class="exam-header">
@@ -78,35 +78,66 @@
             </view>
             <!--            课程进度-->
             <view id="course">课程进度</view>
-            <view class="list-view" wx:for="{{person.courses}}" wx:key="*this" wx:for-index="idx" wx:for-item="course">
-                <view class="course-container">
-                    <view class="course-content">
-                        <view class="course-header">
-                            {{course.course_name}}
-                        </view>
-                        <view class="course-middle">
-                            <view class="exam-time">
-                                考试时间：{{course.exam_time}}
-                            </view>
-                            <view class="exam-btn">
-                                <text>去学习</text>
-                            </view>
-                        </view>
-                        <view class="course-footer">
-                            <view class="course-detail detail-one">
-                                <text>视频：{{course.watch_sum}}/{{course.total_sum}}</text>
-                            </view>
-                            <view class="course-detail detail-two">
-                                <text>测验：{{course.exam_sum}}/4</text>
-                            </view>
-                            <view class="course-detail detail-three">
-                                <text>综合测评：{{course.main_finished}}/1</text>
-                            </view>
-                        </view>
-                    </view>
+            <view style="width: 100%;">
+                <view wx:for="{{person.courses}}" wx:key="*this" wx:for-index="idx" wx:for-item="course" >
+                    <z-course course_name="{{course.course_name}}" exma_time="{{course.exam_time}}"
+                            watch_sum="{{course.watch_sum}}}" total_sum="{{course.total_sum}}"
+                            exam_sum="{{course.exam_sum}}" main_finished="{{course.main_finished}}"
+                    >
+                    </z-course>
                 </view>
             </view>
-            <i-toast id="toast" />
+            <!--            <view class="list-view" wx:for="{{person.courses}}" wx:key="*this" wx:for-index="idx" wx:for-item="course">-->
+            <!--                <view class="list-course">-->
+            <!--                    <view class="course-container" bindtap="openCollapse">-->
+            <!--                        <view class="course-content">-->
+            <!--                            <view class="course-header">-->
+            <!--                                {{course.course_name}}-->
+            <!--                            </view>-->
+            <!--                            <view class="course-middle">-->
+            <!--                                <view class="exam-time">-->
+            <!--                                    考试时间：{{course.exam_time}}-->
+            <!--                                </view>-->
+            <!--                                <view class="exam-btn" bindtap="goVideo">-->
+            <!--                                    <text>去学习</text>-->
+            <!--                                </view>-->
+            <!--                            </view>-->
+            <!--                            <view class="course-footer">-->
+            <!--                                <view class="course-detail detail-one">-->
+            <!--                                    <text>视频：{{course.watch_sum}}/{{course.total_sum}}</text>-->
+            <!--                                </view>-->
+            <!--                                <view class="course-detail detail-two">-->
+            <!--                                    <text>测验：{{course.exam_sum}}/4</text>-->
+            <!--                                </view>-->
+            <!--                                <view class="course-detail detail-three">-->
+            <!--                                    <text>综合测评：{{course.main_finished}}/1</text>-->
+            <!--                                </view>-->
+            <!--                            </view>-->
+            <!--                        </view>-->
+            <!--                    </view>-->
+            <!--                </view>-->
+            <!--                <view class="course-detail-container">-->
+            <!--                    <view class="detail-content">-->
+            <!--                        <view class="detail-course-item">-->
+            <!--                            <image src="/images/course/play.png"  class="item-ico"></image>-->
+            <!--                            <view class="type-text">视频</view>-->
+            <!--                            <i-progress percent="25" style="width: 70%;margin-left: 1rem"></i-progress>-->
+            <!--                        </view>-->
+            <!--                        <view class="detail-course-item">-->
+            <!--                            <image src="/images/course/test.png"  class="item-ico"></image>-->
+            <!--                            <view class="type-text">测验</view>-->
+            <!--                            <i-progress percent="25" style="width: 70%;margin-left: 1rem"></i-progress>-->
+            <!--                        </view>-->
+            <!--                        <view class="detail-course-item">-->
+            <!--                            <image src="/images/course/all.png"  class="item-ico"></image>-->
+            <!--                            <view class="type-text">综测</view>-->
+            <!--                            <i-progress percent="25" style="width: 70%;margin-left: 1rem"></i-progress>-->
+            <!--                        </view>-->
+            <!--                        <view class="footer"></view>-->
+            <!--                    </view>-->
+            <!--                </view>-->
+            <!--            </view>-->
+            <i-toast id="toast"/>
             <view class="footer"></view>
         </scroll-view>
     </view>

@@ -3,7 +3,9 @@
 App({
     globalData: {
         exam_id: 'testkxy',
-        url: 'http://localhost:8080/apis/v1/wechat',
+        // url: 'http://localhost:8080/apis/v1/wechat',
+        url: 'http://m.hbuvt.com/apis/v1/wechat',
+
     },
     onLaunch: function () {
 

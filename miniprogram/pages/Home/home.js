@@ -5,6 +5,7 @@ const app = getApp()
 
 Page({
     data: {
+        showBoard: '',
         person: {
             info: {
                 // real_name: '孔祥宜',
@@ -45,6 +46,26 @@ Page({
         })
     },
     tap() {
+    },
+    goGrade(e) {
+        wx.navigateTo({
+            url: '/pages/Grade/grade'
+        })
+    },
+    goVideo(e) {
+        wx.navigateTo({
+            url: '/pages/Video/video'
+        })
+    },
+    goCourse(e) {
+        wx.navigateTo({
+            url: '/pages/Course/course'
+        })
+    },
+    goExam(e) {
+        wx.navigateTo({
+            url: '/pages/Exam/exam'
+        })
     },
 
     changeProperty: function (e) {
