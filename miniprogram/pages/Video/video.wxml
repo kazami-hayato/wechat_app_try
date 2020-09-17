@@ -1,2 +1,20 @@
 <!--miniprogram/pages/Video/video.wxml-->
-<text>miniprogram/pages/Video/video.wxml</text>
+<view class="container">
+    <view class="video-container">
+        <video class="vp-v" src="{{ src }}" custom-cache="{{false}}"
+               bindtimeupdate="timeupdate">
+        </video>
+    </view>
+    <view class="tab-panel">
+        <i-tabs current="{{ current }}" bindchange="handleChange">
+            <i-tab key="1" title="目录"></i-tab>
+            <i-tab key="2" title="测验"></i-tab>
+            <i-tab key="3" title="进度"></i-tab>
+        </i-tabs>
+    </view>
+    <view class="panel">
+        <view wx:if="{{current=='1'}}" class='tab1'>
+
+        </view>
+    </view>
+</view>

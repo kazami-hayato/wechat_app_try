@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/Video/video",
     "pages/Home/home",
     "pages/Course/course",
     "pages/Grade/grade",
@@ -8,7 +9,6 @@
     "pages/Index/index",
     "pages/Selection/selection",
     "pages/Information/information",
-    "pages/Video/video",
     "pages/Consult/consult",
     "pages/About/about",
     "pages/ChangePwd/password"

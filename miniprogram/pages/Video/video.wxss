@@ -1,1 +1,32 @@
 /* miniprogram/pages/Video/video.wxss */
+.video-container{
+    height: 0;
+    padding-bottom: 56.25%;
+    position: absolute;
+    width:100%;
+}
+video{
+    display: block;
+}
+.container{
+  width: 100%;
+}
+/*video*/
+.vp-v{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.tab-panel{
+    position: relative;
+    width: 100%;
+    height: 2rem;
+    margin-top: 14.7rem;
+}
+.panel{
+    margin-top: 1rem;
+    width: 100%;
+}
