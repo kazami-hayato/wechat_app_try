@@ -14,7 +14,13 @@
     </view>
     <view class="panel">
         <view wx:if="{{current=='1'}}" class='tab1'>
-
+            <z-catalog catalog="{{catalog}}" catalogDict="{{catalogDict}}" catalogMap="{{catalogMap}}"></z-catalog>
+        </view>
+        <view wx:if="{{current=='2'}}" class='tab2'>
+            <z-exam exams_score="{{exams_score}}"></z-exam>
+        </view>
+        <view wx:if="{{current=='3'}}" class='tab3'>
+            <z-process process="{{process}}"></z-process>
         </view>
     </view>
 </view>

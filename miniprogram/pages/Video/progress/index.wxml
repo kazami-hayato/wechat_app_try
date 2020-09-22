@@ -1,2 +1,21 @@
 <!--pages/Video/progress/index.wxml-->
-<text>pages/Video/progress/index.wxml</text>
+<view class="course-detail-container">
+    <view class="detail-content">
+        <view class="detail-course-item">
+            <image src="/images/course/play.png" class="item-ico"></image>
+            <view class="type-text">视频</view>
+            <i-progress percent="25" style="width: 70%;margin-left: 1rem"></i-progress>
+        </view>
+        <view class="detail-course-item">
+            <image src="/images/course/test.png" class="item-ico"></image>
+            <view class="type-text">测验</view>
+            <i-progress percent="25" style="width: 70%;margin-left: 1rem"></i-progress>
+        </view>
+        <view class="detail-course-item">
+            <image src="/images/course/all.png" class="item-ico"></image>
+            <view class="type-text">综测</view>
+            <i-progress percent="25" style="width: 70%;margin-left: 1rem"></i-progress>
+        </view>
+        <view class="footer"></view>
+    </view>
+</view>

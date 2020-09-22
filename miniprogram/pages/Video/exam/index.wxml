@@ -1,2 +1,12 @@
 <!--pages/Video/exam/index.wxml-->
-<text>pages/Video/exam/index.wxml</text>
+<view class="exam-container">
+    <view wx:for="{{exams}}" wx:key="*this" wx:for-index="idx" wx:for-item="exam" class="exam-content">
+        <view class="exam-header">
+            <view class="exam-title">{{exam.title}}</view>
+            <view class="exam-btn" bindtap="go" data-index="{{idx}}">去学习</view>
+        </view>
+        <view>
+            <view class="state">{{exams_score[idx]}}/100</view>
+        </view>
+    </view>
+</view>

@@ -1,1 +1,14 @@
 /* pages/Video/catalog/index.wxss */
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.catalog-content{
+    width: 96%;
+}
+.vertical-scroll{
+    width: 100%;
+    white-space: nowrap;
+    height: 1000rpx;
+}

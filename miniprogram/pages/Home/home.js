@@ -103,7 +103,6 @@ Page({
         })
         getCourses().then(res => {
             let courses = res.data
-            console.log(courses)
             courses.forEach(course => {
                 let num = 0
                 if (course.test1 > 0) num += 1
@@ -114,7 +113,6 @@ Page({
                 course['main_finished'] = 0
                 if (course.main_test > 0) course['main_finished'] = 1
             })
-            // console.log(courses)
             that.setData({
                 'person.courses': courses
             })

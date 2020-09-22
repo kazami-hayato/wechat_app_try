@@ -1,0 +1,91 @@
+<!--pages/Video/catalog/List/index.wxml-->
+<!--pages/Video/catalog/ListItem/Index.wxml-->
+<view class="ul">
+    <view class="li chapter" wx:for="{{catalogData}}" wx:key="*this" wx:for-index="idx" wx:for-item="item">
+        <view class="item-container {{catalogMap.catalogmap[item.id]['progress']}}">
+            <view class="item-title chapter-title">
+                <i-icon size="20" wx:if="{{catalogDict[item.id].type}}" type="playon"></i-icon>
+                <view class="tag-status" wx:if="{{catalogDict[item.id].type}}">
+                    <i-tag
+                            class="i-tags"
+                            color="green"
+                            wx:if="{{catalogMap.catalogmap[item.id]['progress']}}"
+                            style="padding-left:0.3rem"
+                    >
+                        已完成
+                    </i-tag>
+                    <i-tag
+                            class="i-tags"
+                            color="gray"
+                            wx:else
+                            style="padding-left:0.3rem"
+
+                    >
+                        未完成
+                    </i-tag>
+                </view>
+                {{catalogDict[item.id].label}}
+
+            </view>
+        </view>
+        <view class="li segment " wx:for="{{item.children}}" wx:key="*this" wx:for-index="idx" wx:for-item="item"
+        >
+            <view class="item-container {{catalogMap.catalogmap[item.id]['progress']}}">
+
+                <view class="item-title segment-title">
+                    <i-icon wx:if="{{catalogDict[item.id].type}}" type="playon"></i-icon>
+                    <view class="tag-status" wx:if="{{catalogDict[item.id].type}}">
+                        <i-tag
+                                class="i-tags"
+                                color="green"
+                                wx:if="{{catalogMap.catalogmap[item.id]['progress']}}"
+                                style="padding-left:0.3rem"
+                        >
+                            已完成
+                        </i-tag>
+                        <i-tag
+                                class="i-tags"
+                                color="gray"
+                                wx:else
+                                style="padding-left:0.3rem"
+
+                        >
+                            未完成
+                        </i-tag>
+                    </view>
+                    {{catalogDict[item.id].label}}
+                </view>
+            </view>
+            <view class="li part " wx:for="{{item.children}}" wx:key="*this" wx:for-index="idx" wx:for-item="item"
+            >
+                <view class="item-container {{catalogMap.catalogmap[item.id]['progress']}}">
+
+                    <view class="item-title">
+                        <i-icon size="20" color="#33aaff" wx:if="{{catalogDict[item.id].type}}" type="playon"></i-icon>
+                        <view class="tag-status" wx:if="{{catalogDict[item.id].type}}">
+                            <i-tag
+                                    class="i-tags"
+                                    color="green"
+                                    wx:if="{{catalogMap.catalogmap[item.id]['progress']}}"
+                                    style="padding-left:0.3rem"
+                            >
+                                已完成
+                            </i-tag>
+                            <i-tag
+                                    class="i-tags"
+                                    color="gray"
+                                    wx:else
+                                    style="padding-left:0.3rem"
+
+                            >
+                                未完成
+                            </i-tag>
+                        </view>
+                        {{catalogDict[item.id].label}}
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="hr"></view>
+    </view>
+</view>

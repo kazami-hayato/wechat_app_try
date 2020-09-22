@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "z-li": "./index",
+    "i-icon": "../../../../components/iview/icon/index",
+    "i-tag": "../../../../components/iview/tag/index"
+  }
+}

@@ -2,6 +2,10 @@
   "usingComponents": {
     "i-tabs": "../../components/iview/tabs/index",
     "i-tab": "../../components/iview/tab/index",
-    "z-progress": "./progress/index"
+    "z-progress": "./progress/index",
+    "z-catalog": "./catalog/index",
+    "z-exam": "./exam/index"
+
+
   }
 }

@@ -1,2 +1,10 @@
 <!--pages/Video/catalog/index.wxml-->
-<text>pages/Video/catalog/index.wxml</text>
+<view class="container">
+    <view class="catalog-content">
+        <scroll-view scroll-y="true" class="vertical-scroll" bindscrolltoupper="upper"
+                     bindscrolltolower="lower" bindscroll="scroll"
+                     scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+        <z-li catalogData="{{catalog}}" catalogDict="{{catalogDict}}" catalogMap="{{catalogMap}}"></z-li>
+        </scroll-view>
+    </view>
+</view>
