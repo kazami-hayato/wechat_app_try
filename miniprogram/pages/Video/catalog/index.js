@@ -42,7 +42,7 @@ Component({
    */
   methods: {
     scroll: function(e) {
-      console.log(e)
+      // console.log(e)
     },
   },
 

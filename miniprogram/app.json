@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/Video/video",
+    "pages/Test/test",
     "pages/Home/home",
+    "pages/Video/video",
     "pages/Course/course",
     "pages/Grade/grade",
     "pages/Person/person",

@@ -16,7 +16,8 @@ Page({
         catalogMap: {},
         catalogDict: {},
         playList: [],
-        exams_score:[1,2,3,4,5]
+        exams_score:[1,2,3,4,5],
+        process:[]
         // pane
     },
 
@@ -78,9 +79,6 @@ Page({
             this.data.catalogDict = catalogDict['catalogdict'];
             let current=''
             console.log(catalogMap)
-            catalogTree['catalogtree'].forEach(item=>{
-                console.log(catalogMap['catalogmap'][item.id])
-            })
             // console.log(this.data)
             // this.getPlayList(this.data.catalog);
             // if (this.data.playList.length === 0) {

@@ -6,9 +6,10 @@
 }
 .detail-content{
     padding-left: 1rem;
-    width: 80%;
+    padding-bottom: 1rem;
+    width: 100%;
     border-bottom: .026667rem solid #e6edf2;
-    box-shadow: 0 0.1rem 0.2rem 0.07rem rgba(218, 225, 230, .7);
+    /*box-shadow: 0 0.1rem 0.2rem 0.07rem rgba(218, 225, 230, .7);*/
 }
 .detail-course-item{
     margin-top: 1rem;

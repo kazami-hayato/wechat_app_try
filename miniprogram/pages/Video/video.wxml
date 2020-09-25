@@ -20,7 +20,7 @@
             <z-exam exams_score="{{exams_score}}"></z-exam>
         </view>
         <view wx:if="{{current=='3'}}" class='tab3'>
-            <z-process process="{{process}}"></z-process>
+            <z-progress process="{{process}}"></z-progress>
         </view>
     </view>
 </view>
